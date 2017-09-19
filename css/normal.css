@@ -1,0 +1,205 @@
+/* */
+
+
+/* max-width */
+
+.max-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.nav-href {
+	margin-left: 140px;
+}
+
+.content-header-right {
+	padding: 5px;
+	text-align: center;
+	display: table-cell;
+	position: absolute;
+	right: 0px;
+	bottom: -1px;
+	border-radius: 0;
+	border: none;
+}
+
+
+/* 统计日月  */
+
+.split-div {
+	border: 1px solid #dcdcdc;
+	display: table;
+}
+
+.split-date {
+	display: table-cell;
+	padding: 5px 12px;
+}
+
+.datepicker {
+	border: 1px solid #dcdcdc;
+}
+
+.chart {
+	height: 400px;
+}
+
+.table-bordere-no-slide {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/* 账户管理 --右部分宽度 */
+
+.mini-content,
+.content-header {
+	width: 1060px;
+	float: right;
+}
+
+.cl:after,
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.cl,
+.clearfix {
+	zoom: 1
+}
+
+.tips {
+	font-size: 12px;
+	border: 1px dashed #f19149;
+	margin-bottom: 10px;
+	background-color: #feffcc;
+	padding: 10px;
+}
+
+
+/**/
+
+.table-form {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.modal .table-form tr>td:nth-child(odd) {
+	text-align: right;
+}
+
+.modal .table-form .input-group {
+	border-spacing: 0;
+	width: 150px;
+}
+
+.btn-left-10 {
+	margin-left: 10px;
+}
+
+
+/*添加边距*/
+
+.mini-label {
+	min-width: auto;
+}
+
+
+/*label 去掉min-width*/
+
+.ver-middle {
+	vertical-align: middle;
+}
+
+
+/*遮罩*/
+
+.db-modal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1054;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.db-modal-dialog {
+	position: relative;
+	z-index: 1055;
+	height: auto;
+	margin: 15% auto;
+	width: 800px;
+	/*background: white;*/
+}
+
+.db-modal-dialog.alertMsg {
+	margin: 19% auto;
+	width: 250;
+}
+
+.db-modal .modal {
+	z-index: 1080;
+}
+
+.vertical-baseline {
+	vertical-align: -webkit-baseline-middle;
+}
+
+/* photo */
+.photo-part {
+	padding-right: 0;
+	padding-left: 0;
+	border: 1px solid #dbdbdb;
+	background: #eee;
+}
+.photo-add .photo-part{
+	cursor: pointer;
+	border: 1px dotted #dbdbdb;
+	color: #dcdcdc;
+	height: 192px;
+	text-align: center;
+}
+.photo-add span{
+	font-size: 130px;
+}
+
+.photo-section {
+	height: 160px;
+	position: relative;
+	overflow: hidden;
+}
+.photo-section .img-responsive {
+	margin: auto;
+}
+
+.photo-shadow {
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+	display: inline-block;
+	right: 0;
+	width: 100%;
+	background-color: #000000;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.photo-shadow>img {
+	padding: 6px 6px;
+	cursor: pointer;
+}
+
+.photo-part .photo-word {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 0;
+}

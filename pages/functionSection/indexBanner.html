@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+		<!-- Bootstrap 3.3.7 -->
+		<link rel="stylesheet" href="../../css/bootstrap.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="../../fonts/font-awesome.min.css">
+		<!-- Ionicons -->
+		<link rel="stylesheet" href="../../css/ionicons.min.css">
+		<!-- Theme style -->
+		<link rel="stylesheet" href="../../css/AdminLTE.css">
+
+		<link rel="stylesheet" href="../../css/select2.css" />
+		<!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+		<link rel="stylesheet" href="../../css/_all-skins.css">
+		<link rel="stylesheet" href="../../css/normal.css">
+
+		<link rel="stylesheet" href="../../css/bootstrap-datepicker/bootstrap-datepicker.css" />
+		<link rel="stylesheet" href="../../css/datatables.net/dataTables.bootstrap.css" />
+
+		<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+	</head>
+
+	<body class="hold-transition skin-blue sidebar-mini">
+
+		<div class="wrapper">
+
+			<header class="main-header">
+				<!-- Logo -->
+
+				<nav class="navbar navbar-static-top max-width">
+
+					<!-- Sidebar toggle button-->
+					<div class="nav-href">
+
+						<a href="#" class="sidebar-toggle" data-toggle="" role="button">
+							<b class="">首页</b>
+						</a>
+						<a href="#" class="sidebar-toggle active" data-toggle="" role="button">
+							<b class="">基础管理</b>
+						</a>
+						<a href="#" class="sidebar-toggle" data-toggle="" role="button">
+							<b class="">营销管理</b>
+						</a>
+						<a href="#" class="sidebar-toggle" data-toggle="" role="button">
+							<b class="">交易管理</b>
+						</a>
+						<a href="#" class="sidebar-toggle" data-toggle="" role="button">
+							<b class="">报表</b>
+						</a>
+					</div>
+
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+
+							<!-- User Account: style can be found in dropdown.less -->
+							<li class="dropdown user user-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+									<span class="hidden-xs">Alexander Pierce</span>
+								</a>
+
+							</li>
+							<!-- Control Sidebar Toggle Button -->
+							<li>
+								<a href="#" data-toggle="control-sidebar"><img src="../../img/setting_icon.png"></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper max-width cl">
+				<!-- Left side column. contains the logo and sidebar -->
+				<aside class="main-sidebar">
+					<!-- sidebar: style can be found in sidebar.less -->
+					<section class="sidebar">
+						<!-- Sidebar user panel -->
+
+						<!-- sidebar menu: : style can be found in sidebar.less -->
+						<ul class="sidebar-menu" data-widget="tree">
+							<li class="active treeview">
+								<a href="#">
+									<b>账户管理</b>
+									<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="accountManage.html">账号管理</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">用户管理</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">角色管理</a>
+									</li>
+								</ul>
+							</li>
+							<li class="active treeview">
+								<a href="#">
+									<b>粉丝管理</b>
+									<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="javascript:void(0);">粉丝列表</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">粉丝分组管理</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">会员权益</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">注册参数配置</a>
+									</li>
+								</ul>
+							</li>
+							<li class="active  treeview">
+								<a href="#">
+									<b>功能栏目</b>
+									<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+								</a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="javascript:void(0);">底部导航</a>
+									</li>
+									<li class="active">
+										<a href="javascript:void(0);">首页banner广告</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">素材管理</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">自定义菜单</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">关键字回复</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">其它回复</a>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+					</section>
+					<!-- /.sidebar -->
+				</aside>
+
+				<section class="content-header">
+
+					<ol class="breadcrumb">
+						<li>
+							<a href="#"><i class="fa fa-dashboard"></i>账户管理</a>
+						</li>
+						<li class="active">首页banner广告</li>
+					</ol>
+				<!--	<button class="btn btn-primary pull-right content-header-right" data-toggle="modal" data-target="#modal-default">添加用户</button>-->
+
+				</section>
+
+		
+				<div class="modal fade alertMsg" id="modal-alertMsg">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">消息</h4>
+							</div>
+							<div class="modal-body">
+								<h4>是否确定删除？</h4>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default">确定</button>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+
+				<div class="modal fade middle-modal" id="modal-default">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title">关联内部界面</h4>
+							</div>
+							<div class="modal-body">
+
+								<table class="table-form">
+									<tr>
+										<td><label for="" class="control-label">标题:</label></td>
+										<td >
+											<input type="text" class="form-control" id="" placeholder="">
+										</td>
+									</tr>
+								
+									<tr>
+										<td><label for="" class="control-label label-important">序号:</label></td>
+										<td>
+											<input type="text" class="form-control" id="" placeholder="">
+										</td>
+									</tr>
+									<tr>
+										<td><label for="" class="control-label label-important">广告图片:</label></td>
+										<td colspan="3"><input type="file" id=""></td>
+										
+									</tr>
+									<tr>
+										<td><label for="" class="control-label label-important">链接:</label></td>
+										<td>
+											<input type="text" class="form-control" id="" placeholder="">
+										</td>
+									</tr>
+								
+								</table>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary pull-left btn-save">保存</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+
+				<!-- Main content -->
+				<section class="content mini-content">
+					<div class="row">
+						<div class="col-md-12 col-lg-12 col-sm-12  tips">
+
+							温馨提示<br />首页banner广告配置最多可设置六张广告位图片。 在微网站首页轮播显示。可接入内部链接，第三方链接和活动等内容
+						</div>
+					</div>
+
+					<div class="row">
+						<label for="inputEmail3" class="control-label">商业项目:</label>
+						<!--<input type="email" class="form-control" id="inputEmail3" placeholder="Email">-->
+						<select class="form-control select2">
+							<option selected="selected">Alabama</option>
+							<option>Alaska</option>
+							<option>California</option>
+							<option>Delaware</option>
+							<option>Tennessee</option>
+							<option>Texas</option>
+							<option>Washington</option>
+						</select>
+					</div>
+					<!-- /.row -->
+					
+					<div class="row">
+						<div class="col-sm-3 photo-div">
+							<div class="col-sm-12 photo-part">
+								<div class="photo-section">
+								<img class="img-responsive" src="../../img/photo2.png" alt="Photo">
+								<div class="col-sm-12 photo-shadow">
+									<img src="../../img/delete_icon.png" class="img-close" alt="删除" data-toggle="modal" data-target="#modal-alertMsg">
+									<img src="../../img/edit_icon.png"  alt="编辑" class="img-edit"  data-toggle="modal" data-target="#modal-default">
+								</div>
+							</div>
+							   <p class="text-center photo-word">标题名称</p>
+							</div>
+							
+						</div>
+						<div class="col-sm-3 photo-div">
+							<div class="col-sm-12 photo-part">
+								<div class="photo-section">
+								<img class="img-responsive" src="../../img/photo1.png" alt="Photo">
+								<div class="col-sm-12 photo-shadow">
+									<img src="../../img/delete_icon.png" class="img-close" alt="删除" data-toggle="modal" data-target="#modal-alertMsg">
+									<img src="../../img/edit_icon.png"  alt="编辑" class="img-edit"  data-toggle="modal" data-target="#modal-default">
+								</div>
+							</div>
+							   <p class="text-center photo-word">标题名称</p>
+							</div>
+							
+						</div>
+						<div class="col-sm-3 photo-div">
+							<div class="col-sm-12 photo-part">
+								<div class="photo-section">
+								<img class="img-responsive" src="../../img/avatar.png" alt="Photo">
+								<div class="col-sm-12 photo-shadow">
+									<img src="../../img/delete_icon.png" class="img-close" alt="删除" data-toggle="modal" data-target="#modal-alertMsg">
+									<img src="../../img/edit_icon.png"  alt="编辑" class="img-edit"  data-toggle="modal" data-target="#modal-default">
+								</div>
+							</div>
+							   <p class="text-center photo-word">标题名称</p>
+							</div>
+							
+						</div>
+						<div class="col-sm-3 photo-div photo-add" >
+							<div class="col-sm-12 photo-part" data-toggle="modal" data-target="#modal-default-append">
+							   <span>+</span>
+							</div>
+							
+						</div>
+						 
+					</div>
+
+				</section>
+			
+			
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/bootstrap.js"></script>
+		<script type="text/javascript" src="../../js/adminlte.js"></script>
+		<!-- bootstrap select -->
+		<script type="text/javascript" src="../../js/select2.full.js"></script>
+		<!-- bootstrap datepicker -->
+		<script src="../../js/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="../../js/datatables.net/jquery.dataTables.js"></script>
+		<script type="text/javascript" src="../../js/datatables.net/dataTables.bootstrap.js"></script>
+		<script type="text/javascript" src="../../js/echarts-all.js"></script>
+
+		<script>
+			$(function() {
+				$('.select2').select2();
+				
+			    var oClone=$("#modal-default").clone().attr("id","modal-default-append"); 
+			    $("#modal-default").after(oClone);
+			    
+			    
+			    /* 点删除  */
+				$(".photo-shadow").on("click",".img-close",function(){
+					var obj=$(this);
+					var targetDiv=obj.attr("data-target");
+	
+					$(""+targetDiv+" .btn-save").off("click");
+					$(targetDiv).on("click",".btn-default",function(){
+						 $(targetDiv).click();
+						 //点击确定后的操作
+						 var oPar=obj.closest(".photo-div");
+						 oPar.detach();
+					});
+					
+				});
+				
+				/* 点编辑  */
+				$(".photo-shadow").on("click",".img-edit",function(){
+					var obj=$(this);
+					var targetDiv=obj.attr("data-target");
+					
+					$(""+targetDiv+" .btn-save").off("click");
+					$(targetDiv).on("click",".btn-save",function(e){
+						e.preventDefault();
+						e.stopPropagation();
+						$(targetDiv).click();
+						
+						//点击保存后的操作
+					});
+					
+				});
+				
+				$(".photo-add .photo-part").off("click");
+				$(".photo-add").on("click",".photo-part",function(e){
+					
+					e.preventDefault();
+					var obj=$(this);
+					var targetDiv=obj.attr("data-target");
+				    
+				    $(""+targetDiv+" .btn-save").off("click");
+				 
+					/*$(targetDiv).on("click",".btn-save",function(e){
+						 e.preventDefault();
+						 e.stopPropagation();
+						
+						 	 var arr=$(".photo-div").eq(0).clone();
+						     obj.before(arr);
+						     alert("2");
+					
+					    
+						 return false;
+						
+						//点击保存后的操作
+					});*/
+					
+					/*$('#modal-default-append').on('shown.bs.modal', function (e) {
+                        $(targetDiv).on("click",".btn-save",function(e){
+						 e.preventDefault();
+						 e.stopPropagation();
+						
+						 	 var arr=$(".photo-div").eq(0).clone();
+						     obj.before(arr);
+						     alert("2");
+					
+					   
+						
+						//点击保存后的操作
+					   });
+                    })
+					$('#modal-default-append').on('hide.bs.modal', function (e) {
+                        // 执行一些动作...
+                        e.stopPropagation();
+                        $('#modal-default-append .btn-save').off("click");
+                     })*/
+				
+				});
+				
+				
+				
+
+			});
+		</script>
+	</body>
+
+</html>
